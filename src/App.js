@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import SchemaBuilder from './components/SchemaBuilder/schemaBuilder'; // ✅ Correct path
+import './App.css'; // Optional, if you have global styles
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex', height: '100vh', padding: '20px' }}>
+      {/* Left side: Form */}
+      <div style={{ flex: 1, paddingRight: '20px', borderRight: '1px solid #ccc', overflowY: 'auto' }}>
+        <h2>Schema Builder</h2>
+        <SchemaBuilder />
+      </div>
+
+      
     </div>
   );
 }
