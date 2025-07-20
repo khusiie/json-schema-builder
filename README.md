@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dynamic and interactive JSON Schema Builder built using ReactJS and Ant Design, designed to help users visually create complex JSON schemas without writing code
 
 ## Available Scripts
 
